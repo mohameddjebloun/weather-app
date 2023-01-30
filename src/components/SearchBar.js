@@ -7,10 +7,10 @@ const SearchBar = (props) => {
     if (locationValue.trim().length === 0) {
       return;
     }
-    props.setLocation(locationValue);
+    props.setLocation(locationValue.trim());
   };
   const handleChange = (event) => {
-    setLocationValue(event.target.value.trim());
+    setLocationValue(event.target.value);
   };
   return (
     <form onSubmit={handleSubmit}>
