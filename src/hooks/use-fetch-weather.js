@@ -12,7 +12,7 @@ const useWeather = (location) => {
     setData(null);
 
     fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
