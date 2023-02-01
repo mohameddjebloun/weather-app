@@ -1,6 +1,7 @@
 const Temperature = (props) => {
   return (
     <p className="text-center">
+      Temperature:{" "}
       {!props.unit
         ? `${parseFloat((props.data.main.temp - 273.15).toFixed(2))} °C`
         : `${parseFloat(
